@@ -31,9 +31,15 @@ body {
   margin: 40px;
   margin-bottom: 50px;
 }
+
 .input {
   width: 75px;
   text-align: center;
+}
+
+.buttonCalculate {
+  width: 100px;
+  margin-bottom: 30px;
 }
 
 .container {

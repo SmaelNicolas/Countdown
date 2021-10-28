@@ -46,20 +46,19 @@ const setInputs = () => {
 
 const clickCalculate = () => {
   let buttonCalculate = document.getElementById("calculate");
+  let inputGroup = document.getElementsByClassName("input");
+
+  for (let i = 0; i < inputGroup.length; i++) {
+    inputGroup[i].addEventListener("keyup", () => {
+      if (event.keyCode === 13) {
+        calculate();
+      }
+    });
+  }
 
   buttonCalculate.addEventListener("click", () => {
     calculate();
   });
-};
-
-const changeInputs = () => {
-  let inputGroup = document.getElementsByClassName("input");
-
-  for (let i = 0; i < inputGroup.length; i++) {
-    inputGroup[i].addEventListener("change", () => {
-      calculate();
-    });
-  }
 };
 
 const calculate = () => {
@@ -121,12 +120,10 @@ const calculate = () => {
     }
 
     date = `${d} ${month} ${y}`;
-    console.log(date);
     countDown();
     setInterval(countDown, 1000);
   }
 };
 
 clickCalculate();
-// changeInputs();
 setInputs();
