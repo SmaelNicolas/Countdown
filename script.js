@@ -18,10 +18,10 @@ const countDown = () => {
   const totalTimeMiliseconds = dateSelected - currentDate;
   const totalTime = totalTimeMiliseconds / 1000;
 
-  const days = Math.round(totalTime / 3600 / 24);
-  const hours = Math.round(totalTime / 3600) % 24;
-  const minutes = Math.round(totalTime / 60) % 60;
-  const seconds = Math.round(totalTime % 60);
+  const days = Math.floor(totalTime / 3600 / 24);
+  const hours = Math.floor(totalTime / 3600) % 24;
+  const minutes = Math.floor(totalTime / 60) % 60;
+  const seconds = Math.floor(totalTime % 60);
 
   addHTML(days, hours, minutes, seconds);
 };
