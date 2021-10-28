@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.219);
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 45px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(66, 64, 64);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  gap: 100px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.timeCountdown {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.timeNumber {
+  font-size: 50px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(66, 64, 64);
+}
+
+.timeText {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(66, 64, 64);
+}
