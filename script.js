@@ -143,6 +143,14 @@ const isValid = (d, m, y) => {
     valid = false;
   }
 
+  if (y <= today.getFullYear()) {
+    if (m <= today.getMonth() + 1) {
+      if (d <= today.getDate()) {
+        valid = false;
+      }
+    }
+  }
+
   return valid;
 };
 
