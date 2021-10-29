@@ -131,6 +131,10 @@ const isValid = (d, m, y) => {
     valid = false;
   }
 
+  if (y < today.getFullYear()) {
+    valid = false;
+  }
+
   if (d == 31 && (m == 2 || m == 4 || m == 6 || m == 9 || m == 11)) {
     valid = false;
   }
